@@ -3,7 +3,7 @@
 **The Australis minimalist and customizable style for Firefox with Chromium theme.**
 
 
-##Description**
+##Description
 *This is an theme extension derived from [Australion Classic](http://userstyles.org/styles/83902/australion-classic)
 *Characterized by modifying the user interface using initially to resemble to Google Chrome (with only one requirement).
 *To later combine pleasure with the upcoming Firefox interface, "Australis", no date set for release at the moment.
