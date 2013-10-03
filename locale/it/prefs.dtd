@@ -1,0 +1,73 @@
+<!ENTITY Supportsite	"Support site">
+<!ENTITY Title			"Preferenze per il tema predefinito">
+<!ENTITY Titleextra		"Tutte le impostazioni sono fatte per il tema pedefinito, ma &quot;potrebbero&quot; funzionare con altri temi e altri add-on per la barra degli strumenti!">
+
+<!ENTITY Cbsgroup		"Classic toolbar buttons stile per ...">
+<!ENTITY Cbsgmenu		"Menu barra degli strumenti &quot;tasti&quot;">
+<!ENTITY Cbsgtabs		"Barra delle schede &quot;tasti&quot;">
+<!ENTITY Cbsgnav		"Barra di navigazione &quot;tasti&quot;">
+<!ENTITY Navbarbuttons0 "Disattivato">
+<!ENTITY Navbarbuttons1 "Attivato (visualizza icone grandi &amp; piccole [Firefox])">
+<!ENTITY Navbarbuttons2 "Attivato (visualizza icone piccole [Firefox UX])">
+<!ENTITY Cbsgbookm1		"Barra dei segnalibri &quot;tasti&quot;">
+<!ENTITY Cbsgbookm2		"Barra dei segnalibri &quot;oggetti &amp; cartelle&quot;">
+<!ENTITY Cbsgaddon		"Barra degli Add-on &quot;tasti&quot;">
+<!ENTITY Cbsgaios		"All-In-One-Sidebar &quot;tasti&quot;">
+<!ENTITY Cbsgplaces		"Places &quot;tasti&quot;">
+<!ENTITY Cbsgmain		"Barra degli strumenti principale &quot;tasti&quot;">
+<!ENTITY Onlysmall		"Lo stile per i tasti della barra di navigazione è disponibile solo per la visualizzazione delle icone piccole per Firefox 13 e precedenti!">
+
+<!ENTITY Tabscrollbut	"Tab-scroll-buttons (se visibile)">
+<!ENTITY Bfdropmarker	"Back-forward-dropmarker (se installato)">
+
+<!ENTITY Notfor 		"Non adatto per estensioni e temi che già cambiano le icone dei tasti della barra degli strumenti! L'impostazione &quot;predefinito&quot; deve rimanere in questi casi!">
+<!ENTITY Navicons		"Icone tasti barra degli strumenti">
+<!ENTITY Naviconsd		"Stile icone principali">
+<!ENTITY Browsericonsd	"Stile icone principali (Browser)">
+<!ENTITY Mailiconsd		"Stile icone principali (Mail)">
+<!ENTITY Ico_def		"Predefinito (Applicazioni/Temi/Estensioni)">
+<!ENTITY Ico_12d		"Firefox 4-12 (Scuro)">
+<!ENTITY Ico_12w		"Firefox 4-12 (Bianco)">
+<!ENTITY Ico_13d		"Firefox 13+ (Scuro)">
+<!ENTITY Ico_13w		"Firefox 13+ (Bianco)">
+
+<!ENTITY Ico_tb17d		"Thunderbird (Scuro)">
+<!ENTITY Ico_tb17w		"Thunderbird (Bianco)">
+
+<!ENTITY Naviconsddm	"Icone Dropmarker">
+<!ENTITY Navico11dm		"Scuro &amp; piccolo">
+<!ENTITY Navico12dm		"Scuro &amp; grande">
+<!ENTITY Navico13dm		"Bianco &amp; piccolo">
+<!ENTITY Navico14dm		"Bianco &amp; grande">
+
+<!ENTITY Dlindicat		"Indicatore dei download">
+<!ENTITY Dlindicat1		"Icona Modern green">
+<!ENTITY Dlindicat2		"Icona Modern blue">
+
+<!ENTITY Bfbutton		"Tasto Back-forward">
+<!ENTITY Bf_ico_3v1		"Firefox 3 (verde)">
+<!ENTITY Bf_ico_3v2		"Firefox 3 (Strata blu)">
+<!ENTITY Bf_ico_3v3		"Firefox 3 (Rosso)">
+<!ENTITY Bf_ico_3v4		"Firefox 3 (Arancio)">
+
+<!ENTITY Tweaks			"Altre regolazioni">
+<!ENTITY Olddlwindow	"Finestra dei download classica (si raccomanda il riavvio di Firefox!)">
+<!ENTITY Verdomainid	"Verde classico &amp; colore blu per identità e domini verificati">
+<!ENTITY Showforward	"Ripristina il tasto 'avanti' nascosto (se il tasto back-forward è collegato alla barra degli indirizzi)">
+<!ENTITY ClassicRSGbut	"Tasto Stop-reload-go sulla barra degli indirizzi">
+<!ENTITY ClassicRSGbut1	"Stile classico">
+<!ENTITY ClassicRSGbut2	"Stile Australis">
+
+<!ENTITY HeightSpace	"Contorno, dimensioni e spazi">
+<!ENTITY Sizeinfo1		"Alcuni tasti della barra degli strumenti possono apparire sbagliati in alcuni casi, quando queste impostazioni sono in uso.">
+<!ENTITY Sizeinfo2		"Le impostazioni per il contorno, l'altezza e la larghezza non hanno effetto sul tasto back-forward, se è collegato alla barra degli indirizzi. La barra degli indirizzi appare sbagliata, se la spaziatura in alto e in basso dei tasti della barra degli strumenti e i valori dell'altezza sono impostati troppo alti.">
+<!ENTITY Sizeinfo3		"Importante: Resettare le impostazioni del contorno dopo avere disabilitato e riabilitato lo stile Classic Toolbar Buttons!">
+
+<!ENTITY Buttonradius	"Contorno per ...">
+<!ENTITY UrlSearchbarR	"Barra degli indirizzi &amp; Barra di ricerca &quot;contorni&quot;">
+<!ENTITY Buttonheight	"Tasto (min-)altezza per ...">
+<!ENTITY Buttonwidth	"Tasto (min-)larghezza per ...">
+<!ENTITY SpaceBB		"Sinistra &amp; destra spazio tra ...">
+<!ENTITY SpaceBB2		"Alto &amp; basso spazio intorno ...">
+<!ENTITY BookbbSpace2	"Barra dei segnalibri &quot;tasti, oggetti &amp; cartelle&quot;">
+<!ENTITY DefSpaceBB		"Predefinito">

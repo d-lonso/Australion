@@ -1,0 +1,73 @@
+<!ENTITY Supportsite	"Support-Seite">
+<!ENTITY Title			"Einstellungen (Standard-Theme)">
+<!ENTITY Titleextra		"Alle Einstellungen sind für das Standard-Theme. Möglicherweise funktionieren sie aber auch mit einigen anderen Themes!">
+
+<!ENTITY Cbsgroup		"Klassischer Buttons-Stil für ...">
+<!ENTITY Cbsgmenu		"Menü-Leisten Buttons">
+<!ENTITY Cbsgtabs		"Tab-Leisten Buttons">
+<!ENTITY Cbsgnav		"Navigations-Leisten Buttons">
+<!ENTITY Navbarbuttons0 "Deaktiviert">
+<!ENTITY Navbarbuttons1 "Aktiviert (Große &amp; kleine Buttons [Firefox])">
+<!ENTITY Navbarbuttons2 "Aktiviert (Kleine Buttons [Firefox UX])">
+<!ENTITY Cbsgbookm1		"Lesezeichen-Leisten Buttons">
+<!ENTITY Cbsgbookm2		"Lesezeichen-Leisten Elemente &amp; Ordner">
+<!ENTITY Cbsgaddon		"Add-ons-Leisten Buttons">
+<!ENTITY Cbsgaios		"All-In-One-Sidebar Buttons">
+<!ENTITY Cbsgplaces		"Bibliotheks-Leisten Buttons">
+<!ENTITY Cbsgmain		"Haupt-Leisten Buttons">
+<!ENTITY Onlysmall		"Bei Firefox 13 (und älter) werden Navigations-Leisten Buttons nur für die kleine Symbolansicht verändert!">
+
+<!ENTITY Tabscrollbut	"Tab-Scroll-Buttons (falls sichtbar)">
+<!ENTITY Bfdropmarker	"&quot;Vor-Zurück-Dropmarker&quot; (falls installiert)">
+
+<!ENTITY Notfor 		"Nicht geeignet für Erweiterungen und Themes, die bereits Leisten-Symbole verändern! Die Einstellung sollte in solchen Fällen auf &quot;standard&quot; bleiben!">
+<!ENTITY Navicons		"Button-Symbole">
+<!ENTITY Naviconsd		"Hauptsymbol-Stil">
+<!ENTITY Browsericonsd	"Hauptsymbol-Stil (Browser)">
+<!ENTITY Mailiconsd		"Hauptsymbol-Stil (Mail)">
+<!ENTITY Ico_def		"Standard (Anwendung/Thema/Add-on)">
+<!ENTITY Ico_12d		"Firefox 4-12 (dunkel)">
+<!ENTITY Ico_12w		"Firefox 4-12 (hell)">
+<!ENTITY Ico_13d		"Firefox 13+ (dunkel)">
+<!ENTITY Ico_13w		"Firefox 13+ (hell)">
+
+<!ENTITY Ico_tb17d		"Thunderbird (dunkel)">
+<!ENTITY Ico_tb17w		"Thunderbird (hell)">
+
+<!ENTITY Naviconsddm	"Dropmarker-Symbole">
+<!ENTITY Navico11dm		"Dunkel &amp; klein">
+<!ENTITY Navico12dm		"Dunkel &amp; groß">
+<!ENTITY Navico13dm		"Hell &amp; klein">
+<!ENTITY Navico14dm		"Hell &amp; groß">
+
+<!ENTITY Dlindicat		"Downloads-Indikator">
+<!ENTITY Dlindicat1		"Modernes grünes Symbol">
+<!ENTITY Dlindicat2		"Modernes blaues Symbol">
+
+<!ENTITY Bfbutton		"Vor-Zurück Button">
+<!ENTITY Bf_ico_3v1		"Firefox 3 (grün)">
+<!ENTITY Bf_ico_3v2		"Firefox 3 (Strata blau)">
+<!ENTITY Bf_ico_3v3		"Firefox 3 (rot)">
+<!ENTITY Bf_ico_3v4		"Firefox 3 (orange)">
+
+<!ENTITY Tweaks			"Andere Einstellugen">
+<!ENTITY Olddlwindow	"Klassisches Downloads Fenster (FF-Neustart empfohlen!)">
+<!ENTITY Verdomainid	"Klassische grüne und blaue Farben für verifizierte Identitäten und Domains">
+<!ENTITY Showforward	"Vorwärts-Button wiederherstellen (falls der Vor-Zurück-Button und die Adressleiste verbunden sind)">
+<!ENTITY ClassicRSGbut	"&quot;Stop-Aktualisieren-Los&quot;-Button Ansicht (in der Adressleiste)">
+<!ENTITY ClassicRSGbut1	"Klassischer Stil">
+<!ENTITY ClassicRSGbut2	"Australis Stil">
+
+<!ENTITY HeightSpace	"Radius, Größe und Abstände">
+<!ENTITY Sizeinfo1		"Einige Buttons könnten in einigen Fällen falsch dargestellt werden!">
+<!ENTITY Sizeinfo2		"Der &quot;mit der Adressleiste kombinierte Vor-Zurück-Button&quot; könnte fehlerhaft aussehen, wenn die Werte für obere und untere Button-Abstände sowie die Button-Höhe zu hoch eingestellt sind. Außerdem werden dessen Höhe, Breite und Radius durch die Einstellungen nicht verändert.">
+<!ENTITY Sizeinfo3		"Achtung: Rand-Radius-Einstellungen müssen wiederholt werden, wenn der &quot;klassische Button-Stil&quot; deaktiviert und wieder aktiviert wird.">
+
+<!ENTITY Buttonradius	"Rand-Radius für ...">
+<!ENTITY UrlSearchbarR	"Adress- &amp; Suchfeld &quot;Ränder&quot;">
+<!ENTITY Buttonheight	"Button(-Minimal)-Höhe für ...">
+<!ENTITY Buttonwidth	"Button(-Minimal)-Breite für ...">
+<!ENTITY SpaceBB		"Abstand (links &amp; rechts) zwischen ...">
+<!ENTITY SpaceBB2		"Abstand (oben &amp; unten) um ...">
+<!ENTITY BookbbSpace2	"Lesezeichen-Leisten Buttons, Elemente &amp; Ordner">
+<!ENTITY DefSpaceBB		"Standard">

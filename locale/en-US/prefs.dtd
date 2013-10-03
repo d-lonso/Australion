@@ -1,0 +1,73 @@
+<!ENTITY Supportsite	"Support site">
+<!ENTITY Title			"Preferences for default theme">
+<!ENTITY Titleextra		"All settings are made for the default theme, but they &quot;may&quot; work with other themes and toolbar-styling add-ons too!">
+
+<!ENTITY Cbsgroup		"Classic toolbar buttons style for ...">
+<!ENTITY Cbsgmenu		"Menu toolbar &quot;buttons&quot;">
+<!ENTITY Cbsgtabs		"Tabs toolbar &quot;buttons&quot;">
+<!ENTITY Cbsgnav		"Navigation toolbar &quot;buttons&quot;">
+<!ENTITY Navbarbuttons0 "Disabled">
+<!ENTITY Navbarbuttons1 "Enabled (large &amp; small buttons [Firefox])">
+<!ENTITY Navbarbuttons2 "Enabled (small buttons [Firefox UX])">
+<!ENTITY Cbsgbookm1		"Bookmarks toolbar &quot;buttons&quot;">
+<!ENTITY Cbsgbookm2		"Bookmarks toolbar &quot;items &amp; folders&quot;">
+<!ENTITY Cbsgaddon		"Add-ons toolbar &quot;buttons&quot;">
+<!ENTITY Cbsgaios		"All-In-One-Sidebar &quot;buttons&quot;">
+<!ENTITY Cbsgplaces		"Places &quot;buttons&quot;">
+<!ENTITY Cbsgmain		"Main toolbar &quot;buttons&quot;">
+<!ENTITY Onlysmall		"Navigation toolbar buttons style is only available for small icon view on Firefox 13 and older!">
+
+<!ENTITY Tabscrollbut	"Tab-scroll-buttons (if visible)">
+<!ENTITY Bfdropmarker	"Back-forward-dropmarker (if installed)">
+
+<!ENTITY Notfor 		"Not suitable for extensions and themes, that already change toolbar button icons! The &quot;default&quot; setting should remain in such cases!">
+<!ENTITY Navicons		"Toolbar button icons">
+<!ENTITY Naviconsd		"Main icons style">
+<!ENTITY Browsericonsd	"Browser icons style">
+<!ENTITY Mailiconsd		"Mail client icons style">
+<!ENTITY Ico_def		"Default (Application/Theme/Add-on)">
+<!ENTITY Ico_12d		"Firefox 4-12 (dark)">
+<!ENTITY Ico_12w		"Firefox 4-12 (bright)">
+<!ENTITY Ico_13d		"Firefox 13+ (dark)">
+<!ENTITY Ico_13w		"Firefox 13+ (bright)">
+
+<!ENTITY Ico_tb17d		"Thunderbird (dark)">
+<!ENTITY Ico_tb17w		"Thunderbird (bright)">
+
+<!ENTITY Naviconsddm	"Dropmarker icons">
+<!ENTITY Navico11dm		"Dark &amp; small">
+<!ENTITY Navico12dm		"Dark &amp; big">
+<!ENTITY Navico13dm		"White &amp; small">
+<!ENTITY Navico14dm		"White &amp; big">
+
+<!ENTITY Dlindicat		"Downloads indicator">
+<!ENTITY Dlindicat1		"Modern green icon">
+<!ENTITY Dlindicat2		"Modern blue icon">
+
+<!ENTITY Bfbutton		"Back-forward button">
+<!ENTITY Bf_ico_3v1		"Firefox 3 (green)">
+<!ENTITY Bf_ico_3v2		"Firefox 3 (Strata blue)">
+<!ENTITY Bf_ico_3v3		"Firefox 3 (red)">
+<!ENTITY Bf_ico_3v4		"Firefox 3 (orange)">
+
+<!ENTITY Tweaks			"Other tweaks">
+<!ENTITY Olddlwindow	"Classic downloads window (restart Firefox recommended!)">
+<!ENTITY Verdomainid	"Classic green &amp; blue colors for verified identities and domains">
+<!ENTITY Showforward	"Restore hidden forward button (if back-forward-button is connected to urlbar)">
+<!ENTITY ClassicRSGbut	"Stop-reload-go button GUI on urlbar">
+<!ENTITY ClassicRSGbut1	"Classic style">
+<!ENTITY ClassicRSGbut2	"Australis style">
+
+<!ENTITY HeightSpace	"Radius, sizes and spaces">
+<!ENTITY Sizeinfo1		"Some toolbar buttons may look wrong in some cases, when these settings are used.">
+<!ENTITY Sizeinfo2		"Settings for border-radius, height and width don't have an effect on back-forward-button, if it is connected to urlbar. The urlbar looks faulty, if toolbar buttons top and bottom space values and height values are set too high.">
+<!ENTITY Sizeinfo3		"Important: Reset border-radius settings after disabling and reenabling classic toolbar button style!">
+
+<!ENTITY Buttonradius	"Border-radius for ...">
+<!ENTITY UrlSearchbarR	"Urlbar &amp; Searchbar &quot;borders&quot;">
+<!ENTITY Buttonheight	"Button (min-)height for ...">
+<!ENTITY Buttonwidth	"Button (min-)width for ...">
+<!ENTITY SpaceBB		"Extra left &amp; right space for ...">
+<!ENTITY SpaceBB2		"Extra top &amp; bottom space for ...">
+<!ENTITY BookbbSpace2	"Bookmarks toolbar &quot;buttons, items &amp; folders&quot;">
+<!ENTITY DefSpaceBB		"Default">

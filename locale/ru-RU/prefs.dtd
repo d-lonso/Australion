@@ -1,0 +1,73 @@
+<!ENTITY Supportsite	"Сайт поддержки">
+<!ENTITY Title			"Предпочтения темы по умолчанию">
+<!ENTITY Titleextra		"Все настройки делаются для темы по умолчанию, но они также &quot;могут&quot; работать с другими темами и дополнениями, модифицирующими панель инструментов!">
+
+<!ENTITY Cbsgroup		"Классический стиль кнопок панели инструментов для ...">
+<!ENTITY Cbsgmenu		"&quot;Кнопки&quot; панели меню">
+<!ENTITY Cbsgtabs		"&quot;Кнопки&quot; панели вкладок">
+<!ENTITY Cbsgnav		"&quot;Кнопки&quot; панели навигации">
+<!ENTITY Navbarbuttons0 "Дезактивированный">
+<!ENTITY Navbarbuttons1 "Активированный (вид больших &amp; маленьких значков [Firefox])">
+<!ENTITY Navbarbuttons2 "Активированный (вид маленьких значков [Firefox UX])">
+<!ENTITY Cbsgbookm1		"&quot;Кнопки&quot; панели закладок">
+<!ENTITY Cbsgbookm2		"&quot;Элементы и папки&quot; панели закладок">
+<!ENTITY Cbsgaddon		"&quot;Кнопки&quot; панели дополнений">
+<!ENTITY Cbsgaios		"&quot;Кнопки&quot; боковой панели (AIOS)">
+<!ENTITY Cbsgplaces		"&quot;Кнопки&quot; панели библиотеки">
+<!ENTITY Cbsgmain		"&quot;Кнопки&quot; основной панели инструментов">
+<!ENTITY Onlysmall		"Стиль кнопок панели навигации доступен только для вида маленьких значков в Firefox 13 и более старом!">
+
+<!ENTITY Tabscrollbut	"Кнопки прокрутки вкладок (если видны)">
+<!ENTITY Bfdropmarker	"Выпадающий список «назад-вперёд» (если установлен)">
+
+<!ENTITY Notfor 		"Неприменимо для расширений и тем, которые уже изменили значки кнопок панели инструментов! В таких случаях должен оставаться параметр &quot;по умолчанию&quot;!">
+<!ENTITY Navicons		"Значки кнопок панели инструментов">
+<!ENTITY Naviconsd		"Основные значки">
+<!ENTITY Browsericonsd	"Основные значки (Browser)">
+<!ENTITY Mailiconsd		"Основные значки (Mail)">
+<!ENTITY Ico_def		"По умолчанию (Application/Theme/Add-on)">
+<!ENTITY Ico_12d		"Firefox 4-12 (Тёмные)">
+<!ENTITY Ico_12w		"Firefox 4-12 (Светлые)">
+<!ENTITY Ico_13d		"Firefox 13+ (Тёмные)">
+<!ENTITY Ico_13w		"Firefox 13+ (Светлые)">
+
+<!ENTITY Ico_tb17d		"Thunderbird (Тёмные)">
+<!ENTITY Ico_tb17w		"Thunderbird (Светлые)">
+
+<!ENTITY Naviconsddm	"Значки выпадающего списка">
+<!ENTITY Navico11dm		"Тёмные и маленькие">
+<!ENTITY Navico12dm		"Тёмные и большие">
+<!ENTITY Navico13dm		"Светлые и маленькие">
+<!ENTITY Navico14dm		"Светлые и большие">
+
+<!ENTITY Dlindicat		"Скачать индикатор">
+<!ENTITY Dlindicat1		"Современный зеленый значок">
+<!ENTITY Dlindicat2		"Современные синий значок">
+
+<!ENTITY Bfbutton		"Кнопка «назад-вперёд»">
+<!ENTITY Bf_ico_3v1		"Firefox 3 (зеленый)">
+<!ENTITY Bf_ico_3v2		"Firefox 3 (синий)">
+<!ENTITY Bf_ico_3v3		"Firefox 3 (красный)">
+<!ENTITY Bf_ico_3v4		"Firefox 3 (оранжевый)">
+
+<!ENTITY Tweaks			"Другие твики">
+<!ENTITY Olddlwindow	"Классическое окно загрузок (рекомендуется перезапустить Firefox!)">
+<!ENTITY Verdomainid	"Классический зелёный и синий цвета для проверки подлинности и доменов">
+<!ENTITY Showforward	"Восстановить скрытую кнопку «вперёд» (если кнопка «назад-вперёд» присоединена к адресной строке)">
+<!ENTITY ClassicRSGbut	"Интерфейс кнопки остановки-обновления-перехода в адресной строке">
+<!ENTITY ClassicRSGbut1	"Классический стиль">
+<!ENTITY ClassicRSGbut2	"Australis стиль">
+
+<!ENTITY HeightSpace	"Радиус, размеры кнопок и расстояние">
+<!ENTITY Sizeinfo1		"Некоторые кнопки панели инструментов могут выглядеть неправильно в некоторых случаях, когда используются эти параметры.">
+<!ENTITY Sizeinfo2		"Настройки рамки-радиуса, высоты и ширины не влияют на кнопку «назад-вперёд», если она присоединена к адресной строке. Адресная строка может выглядеть неправильно, если задать слишком большие значения высоты и расстояния между кнопками панели инструментов.">
+<!ENTITY Sizeinfo3		"Важно: сбрасывайте настройки рамки-радиуса после отключения и повторнго включения классического стиля кнопок панели инструментов!">
+
+<!ENTITY Buttonradius	"Рамка-радиус для ...">
+<!ENTITY UrlSearchbarR	"&quot;Рамки&quot; адресной строки и строки поиска">
+<!ENTITY Buttonheight	"Минимальная высота кнопки для ...">
+<!ENTITY Buttonwidth	"Минимальная ширина кнопки для ...">
+<!ENTITY SpaceBB		"Расстояние слева и справа между ...">
+<!ENTITY SpaceBB2		"Расстояние сверху и снизу вокруг ...">
+<!ENTITY BookbbSpace2	"&quot;Кнопки, элементы и папки&quot; панели закладок">
+<!ENTITY DefSpaceBB		"По умолчанию">

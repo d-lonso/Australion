@@ -1,0 +1,1750 @@
+<?xml version="1.0"?>
+<!DOCTYPE vbox SYSTEM "chrome://ausralion-extension/locale/prefs.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting title="&Supportsite;" type="control">
+	  <button class="cstbb_supportsite text-link" label="http://forums.mozillazine.org/viewtopic.php?t=2447747" oncommand="location.href='http://forums.mozillazine.org/viewtopic.php?t=2447747'"/>
+	</setting>
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting type="control" title="&Title;" class="cstboptions-mainheader"/>
+	<setting type="control" title="" class="cstboptions-header cstbbff">
+		&Titleextra;
+	</setting>	
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting type="control" title="&Cbsgroup;" class="cstboptions-header"/>
+	
+	<!-- Firefox settings -->
+	<setting pref="extensions.cstbb-extension.menubbuttons"	 type="bool" title="&Cbsgmenu;"	tooltiptext="&Cbsgmenu;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.tabsbbuttons"	 type="bool" title="&Cbsgtabs;"	tooltiptext="&Cbsgtabs;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.navbarbuttons" type="menulist" title="&Cbsgnav;" class="cstbbmenulist cstbbff">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Navbarbuttons0;"	value="nabbuttons_off"/>
+				<menuitem label="&Navbarbuttons1;"	value="nabbuttons_on"/>
+				<menuitem label="&Navbarbuttons2;"	value="nabbuttons_on_small_ux"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookmbuttons1" type="bool" title="&Cbsgbookm1;" tooltiptext="&Cbsgbookm1;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.bookmbuttons2" type="bool" title="&Cbsgbookm2;" tooltiptext="&Cbsgbookm2;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.addonbuttons"  type="bool" title="&Cbsgaddon;"  tooltiptext="&Cbsgaddon;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.aiosbuttons"   type="bool" title="&Cbsgaios;"	  tooltiptext="&Cbsgaios;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.placesbuttons" type="bool" title="&Cbsgplaces;" tooltiptext="&Cbsgplaces;" class="cstbbff"/>
+
+	<!-- Thunderbird settings -->
+	<setting pref="extensions.cstbb-extension.tbtabsbbuttons" type="bool" title="&Cbsgtabs;" tooltiptext="&Cbsgtabs;" class="cstbbtb"/>
+	<setting pref="extensions.cstbb-extension.tbmenubbuttons" type="bool" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbtb"/>
+	<setting pref="extensions.cstbb-extension.tbmainbbuttons" type="bool" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbtb"/>
+	
+	<!-- Seamonkey settings -->
+	<setting pref="extensions.cstbb-extension.smmenubbuttons"  type="bool" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbsm"/>
+	<setting pref="extensions.cstbb-extension.smmainbbuttons"  type="bool" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbsm"/>
+	<setting pref="extensions.cstbb-extension.smbookmbuttons1" type="bool" title="&Cbsgbookm1;" tooltiptext="&Cbsgbookm1;" class="cstbbsm"/>
+	<setting pref="extensions.cstbb-extension.smbookmbuttons2" type="bool" title="&Cbsgbookm2;" tooltiptext="&Cbsgbookm2;" class="cstbbsm"/>
+	
+	<setting type="control" title="" class="cstboptions-header cstbbff"/>
+	<setting pref="extensions.cstbb-extension.tabscrollbut" type="bool" title="&Tabscrollbut;"  tooltiptext="&Tabscrollbut;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.bfdropmarker" type="bool" title="&Bfdropmarker;"  tooltiptext="&Bfdropmarker;" class="cstbbff"/>	
+	
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting type="control" title="&Navicons;" class="cstboptions-header"/>
+	<setting type="control" title="" class="cstboptions-header">
+		&Notfor;
+	</setting>
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting pref="extensions.cstbb-extension.navbicons" type="menulist" title="&Naviconsd;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 			value="ico_default"/>
+				<menuitem label="&Ico_12d;" 			value="ico_ff12d"/>
+				<menuitem label="&Ico_12w;" 			value="ico_ff12w"/>
+				<menuitem label="&Ico_13d;" 			value="ico_ff13d"/>
+				<menuitem label="&Ico_13w;" 			value="ico_ff13w"/>
+				<menuitem label="Firefox 1" 			value="ico_ff1"/>
+				<menuitem label="Firefox 2" 			value="ico_ff2"/>
+				<menuitem label="Firefox 3"				value="ico_ff3v1"/>
+				<menuitem label="Firefox 3 (Strata)"	value="ico_ff3v2"/>
+				<menuitem label="Firefox Ubuntu"		value="ico_tango"/>
+				<menuitem label="Firefox MacOSX"		value="ico_ffmac"/>
+				<menuitem label="Seamonkey"				value="ico_sm"/>
+				<menuitem label="Firefox (Mozilla Mix)"	value="ico_mix"/>
+				<menuitem label="Noia"					value="ico_noia"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tbmailicons" type="menulist" title="&Naviconsd;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 				value="ico_default"/>
+				<menuitem label="&Ico_tb17d;" 				value="ico_tb17d"/>
+				<menuitem label="&Ico_tb17w;" 				value="ico_tb17w"/>
+				<menuitem label="Thunderbird 1"				value="ico_tb1"/>
+				<menuitem label="Thunderbird 2"				value="ico_tb2"/>
+				<menuitem label="Thunderbird 3"				value="ico_tb3v1"/>
+				<menuitem label="Thunderbird 3 (Strata)"	value="ico_tb3v2"/>
+				<menuitem label="Thunderbird (MacOSX)"		value="ico_tbmac"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.smnavbicons" type="menulist" title="&Browsericonsd;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 			value="ico_default"/>
+				<menuitem label="&Ico_12d;" 			value="ico_ff12d"/>
+				<menuitem label="&Ico_12w;" 			value="ico_ff12w"/>
+				<menuitem label="&Ico_13d;" 			value="ico_ff13d"/>
+				<menuitem label="&Ico_13w;" 			value="ico_ff13w"/>
+				<menuitem label="Firefox 1" 			value="ico_ff1"/>
+				<menuitem label="Firefox 2" 			value="ico_ff2"/>
+				<menuitem label="Firefox 3"				value="ico_ff3v1"/>
+				<menuitem label="Firefox 3 (Strata)"	value="ico_ff3v2"/>
+				<menuitem label="Firefox Ubuntu"		value="ico_tango"/>
+				<menuitem label="Firefox MacOSX"		value="ico_ffmac"/>
+				<menuitem label="Firefox (Mozilla Mix)"	value="ico_mix"/>
+				<menuitem label="Noia"					value="ico_noia"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.smmailicons" type="menulist" title="&Mailiconsd;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 				value="ico_default"/>
+				<menuitem label="&Ico_tb17d;" 				value="ico_tb17d"/>
+				<menuitem label="&Ico_tb17w;" 				value="ico_tb17w"/>
+				<menuitem label="Thunderbird 1"				value="ico_tb1"/>
+				<menuitem label="Thunderbird 2"				value="ico_tb2"/>
+				<menuitem label="Thunderbird 3"				value="ico_tb3v1"/>
+				<menuitem label="Thunderbird 3 (Strata)"	value="ico_tb3v2"/>
+				<menuitem label="Thunderbird (MacOSX)"		value="ico_tbmac"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.navdmicons" type="menulist" title="&Naviconsddm;" class="cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 	value="0"/>
+				<menuitem label="&Navico11dm;"	value="1"/>
+				<menuitem label="&Navico12dm;"	value="2"/>
+				<menuitem label="&Navico13dm;"	value="3"/>
+				<menuitem label="&Navico14dm;"	value="4"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.dlindicator" type="menulist" title="&Dlindicat;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 	value="0"/>
+				<menuitem label="&Dlindicat1;"	value="1"/>
+				<menuitem label="&Dlindicat2;"	value="2"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.buttonbf" type="menulist" title="&Bfbutton;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" 			value="bf_default"/>
+				<menuitem label="&Bf_ico_3v1;"			value="bf_green"/>
+				<menuitem label="&Bf_ico_3v2;"			value="bf_blue"/>
+				<menuitem label="&Bf_ico_3v2; v2"		value="bf_blue2"/>
+				<menuitem label="&Bf_ico_3v3;"			value="bf_red"/>
+				<menuitem label="&Bf_ico_3v4;"			value="bf_orange"/>
+				<menuitem label="Internet Explorer 8"	value="bf_ie8"/>
+				<menuitem label="Internet Explorer 9"	value="bf_ie9"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<setting type="control" title="" class="cstboptions-header cstbbff"/>
+	<setting type="control" title="&Tweaks;" class="cstboptions-header cstbbff"/>
+
+	<setting pref="browser.download.useToolkitUI" 			type="bool" title="&Olddlwindow;"	tooltiptext="&Olddlwindow;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.verdomainid" 	type="bool" title="&Verdomainid;"	tooltiptext="&Verdomainid;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.showforward" 	type="bool" title="&Showforward;"	tooltiptext="&Showforward;" class="cstbbff"/>
+	<setting pref="extensions.cstbb-extension.classicsrg" 	type="menulist" title="&ClassicRSGbut;" tooltiptext="&ClassicRSGbut;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem label="&Ico_def;" value="srg_default"/>
+				<menuitem label="&ClassicRSGbut1;" value="srg_classic"/>
+				<menuitem label="&ClassicRSGbut2;" value="srg_austr"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting type="control" title="&HeightSpace;" class="cstboptions-header"/>
+	<setting type="control" title="" class="cstboptions-header">
+		&Sizeinfo1;
+	</setting>
+	<setting type="control" title="" class="cstboptions-header cstbbff">
+		&Sizeinfo2;
+	</setting>
+	<setting type="control" title="" class="cstboptions-header">
+		&Sizeinfo3;
+	</setting>
+	
+	<setting type="control" title="" class="cstboptions-header"/>
+	<setting type="control" title="&Buttonradius;" class="cstboptions-header"/>
+	
+	<!-- Firefox settings -->
+	<setting pref="extensions.cstbb-extension.menubbradius" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tabsbbradius" type="menulist" title="&Cbsgtabs;" tooltiptext="&Cbsgtabs;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.navbbradius" type="menulist" title="&Cbsgnav;" tooltiptext="&Cbsgnav;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookmbbradius1" type="menulist" title="&Cbsgbookm1;" tooltiptext="&Cbsgbookm1;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookmbbradius2" type="menulist" title="&Cbsgbookm2;" tooltiptext="&Cbsgbookm2;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.addonbbradius" type="menulist" title="&Cbsgaddon;" tooltiptext="&Cbsgaddon;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.urlsearchbbradius" type="menulist" title="&UrlSearchbarR;" tooltiptext="&UrlSearchbarR;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+
+	<!-- Thunderbird settings -->
+	<setting pref="extensions.cstbb-extension.tbmenubbradius" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tbtabsbbradius" type="menulist" title="&Cbsgtabs;" tooltiptext="&Cbsgtabs;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tbmainbbradius" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+
+	<!-- Seamonkey settings -->
+	<setting pref="extensions.cstbb-extension.smmainbbradius" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="100"  	label="&DefSpaceBB;"/>
+				<menuitem value="0"		label="0px"/>
+				<menuitem value="1"		label="0.5px"/>
+				<menuitem value="2"		label="1px"/>
+				<menuitem value="3"		label="1.5px"/>
+				<menuitem value="4"		label="2px"/>
+				<menuitem value="5"		label="2.5px"/>
+				<menuitem value="6"		label="3px"/>
+				<menuitem value="7"		label="3.5px"/>
+				<menuitem value="8"		label="4px"/>
+				<menuitem value="9"		label="4.5px"/>
+				<menuitem value="10"	label="5px"/>
+				<menuitem value="11"	label="5.5px"/>
+				<menuitem value="12"	label="6px"/>
+				<menuitem value="13"	label="6.5px"/>
+				<menuitem value="14"	label="7px"/>
+				<menuitem value="15"	label="7.5px"/>
+				<menuitem value="16"	label="8px"/>
+				<menuitem value="17"	label="8.5px"/>
+				<menuitem value="18"	label="9px"/>
+				<menuitem value="19"	label="9.5px"/>
+				<menuitem value="20"	label="10px"/>
+				<menuitem value="21"	label="10.5px"/>
+				<menuitem value="22"	label="11px"/>
+				<menuitem value="23"	label="11.5px"/>
+				<menuitem value="24"	label="12px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+
+
+	<setting type="control" title="&Buttonheight;" class="cstboptions-header"/>
+	<setting pref="extensions.cstbb-extension.menubbheight" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.navbbheight" type="menulist" title="&Cbsgnav;" tooltiptext="&Cbsgnav;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookbbheight" type="menulist" title="&Cbsgbookm1;" tooltiptext="Cbsgbookm1;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.addonbbheight" type="menulist" title="&Cbsgaddon;" tooltiptext="Cbsgaddon;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Thunderbird settings -->
+	<setting pref="extensions.cstbb-extension.tbmenubbheight" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+				<menuitem value="61" label="61px"/>
+				<menuitem value="62" label="62px"/>
+				<menuitem value="63" label="63px"/>
+				<menuitem value="64" label="64px"/>
+				<menuitem value="65" label="65px"/>
+				<menuitem value="66" label="66px"/>
+				<menuitem value="67" label="67px"/>
+				<menuitem value="68" label="68px"/>
+				<menuitem value="69" label="69px"/>
+				<menuitem value="70" label="70px"/>
+				<menuitem value="71" label="71px"/>
+				<menuitem value="72" label="72px"/>
+				<menuitem value="73" label="73px"/>
+				<menuitem value="74" label="74px"/>
+				<menuitem value="75" label="75px"/>
+				<menuitem value="76" label="76px"/>
+				<menuitem value="77" label="77px"/>
+				<menuitem value="78" label="78px"/>
+				<menuitem value="79" label="79px"/>
+				<menuitem value="80" label="80px"/>
+				<menuitem value="81" label="81px"/>
+				<menuitem value="82" label="82px"/>
+				<menuitem value="83" label="83px"/>
+				<menuitem value="84" label="84px"/>
+				<menuitem value="85" label="85px"/>
+				<menuitem value="86" label="86px"/>
+				<menuitem value="87" label="87px"/>
+				<menuitem value="88" label="88px"/>
+				<menuitem value="89" label="89px"/>
+				<menuitem value="90" label="90px"/>
+				<menuitem value="91" label="91px"/>
+				<menuitem value="92" label="92px"/>
+				<menuitem value="93" label="93px"/>
+				<menuitem value="94" label="94px"/>
+				<menuitem value="95" label="95px"/>
+				<menuitem value="96" label="96px"/>
+				<menuitem value="97" label="97px"/>
+				<menuitem value="98" label="98px"/>
+				<menuitem value="99" label="99px"/>
+				<menuitem value="100" label="100px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tbmainbbheight" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+				<menuitem value="61" label="61px"/>
+				<menuitem value="62" label="62px"/>
+				<menuitem value="63" label="63px"/>
+				<menuitem value="64" label="64px"/>
+				<menuitem value="65" label="65px"/>
+				<menuitem value="66" label="66px"/>
+				<menuitem value="67" label="67px"/>
+				<menuitem value="68" label="68px"/>
+				<menuitem value="69" label="69px"/>
+				<menuitem value="70" label="70px"/>
+				<menuitem value="71" label="71px"/>
+				<menuitem value="72" label="72px"/>
+				<menuitem value="73" label="73px"/>
+				<menuitem value="74" label="74px"/>
+				<menuitem value="75" label="75px"/>
+				<menuitem value="76" label="76px"/>
+				<menuitem value="77" label="77px"/>
+				<menuitem value="78" label="78px"/>
+				<menuitem value="79" label="79px"/>
+				<menuitem value="80" label="80px"/>
+				<menuitem value="81" label="81px"/>
+				<menuitem value="82" label="82px"/>
+				<menuitem value="83" label="83px"/>
+				<menuitem value="84" label="84px"/>
+				<menuitem value="85" label="85px"/>
+				<menuitem value="86" label="86px"/>
+				<menuitem value="87" label="87px"/>
+				<menuitem value="88" label="88px"/>
+				<menuitem value="89" label="89px"/>
+				<menuitem value="90" label="90px"/>
+				<menuitem value="91" label="91px"/>
+				<menuitem value="92" label="92px"/>
+				<menuitem value="93" label="93px"/>
+				<menuitem value="94" label="94px"/>
+				<menuitem value="95" label="95px"/>
+				<menuitem value="96" label="96px"/>
+				<menuitem value="97" label="97px"/>
+				<menuitem value="98" label="98px"/>
+				<menuitem value="99" label="99px"/>
+				<menuitem value="100" label="100px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Seamonkey settings -->
+	<setting pref="extensions.cstbb-extension.smmainbbheight" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="25" label="25px"/>
+				<menuitem value="26" label="26px"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+				<menuitem value="61" label="61px"/>
+				<menuitem value="62" label="62px"/>
+				<menuitem value="63" label="63px"/>
+				<menuitem value="64" label="64px"/>
+				<menuitem value="65" label="65px"/>
+				<menuitem value="66" label="66px"/>
+				<menuitem value="67" label="67px"/>
+				<menuitem value="68" label="68px"/>
+				<menuitem value="69" label="69px"/>
+				<menuitem value="70" label="70px"/>
+				<menuitem value="71" label="71px"/>
+				<menuitem value="72" label="72px"/>
+				<menuitem value="73" label="73px"/>
+				<menuitem value="74" label="74px"/>
+				<menuitem value="75" label="75px"/>
+				<menuitem value="76" label="76px"/>
+				<menuitem value="77" label="77px"/>
+				<menuitem value="78" label="78px"/>
+				<menuitem value="79" label="79px"/>
+				<menuitem value="80" label="80px"/>
+				<menuitem value="81" label="81px"/>
+				<menuitem value="82" label="82px"/>
+				<menuitem value="83" label="83px"/>
+				<menuitem value="84" label="84px"/>
+				<menuitem value="85" label="85px"/>
+				<menuitem value="86" label="86px"/>
+				<menuitem value="87" label="87px"/>
+				<menuitem value="88" label="88px"/>
+				<menuitem value="89" label="89px"/>
+				<menuitem value="90" label="90px"/>
+				<menuitem value="91" label="91px"/>
+				<menuitem value="92" label="92px"/>
+				<menuitem value="93" label="93px"/>
+				<menuitem value="94" label="94px"/>
+				<menuitem value="95" label="95px"/>
+				<menuitem value="96" label="96px"/>
+				<menuitem value="97" label="97px"/>
+				<menuitem value="98" label="98px"/>
+				<menuitem value="99" label="99px"/>
+				<menuitem value="100" label="100px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<setting type="control" title="&Buttonwidth;" class="cstboptions-header"/>
+	<setting pref="extensions.cstbb-extension.menubbwidth" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.navbbwidth" type="menulist" title="&Cbsgnav;" tooltiptext="&Cbsgnav;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookbbwidth" type="menulist" title="&Cbsgbookm1;" tooltiptext="Cbsgbookm1;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.addonbbwidth" type="menulist" title="&Cbsgaddon;" tooltiptext="Cbsgaddon;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Thunderbird settings -->
+	<setting pref="extensions.cstbb-extension.tbmenubbwidth" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+				<menuitem value="61" label="61px"/>
+				<menuitem value="62" label="62px"/>
+				<menuitem value="63" label="63px"/>
+				<menuitem value="64" label="64px"/>
+				<menuitem value="65" label="65px"/>
+				<menuitem value="66" label="66px"/>
+				<menuitem value="67" label="67px"/>
+				<menuitem value="68" label="68px"/>
+				<menuitem value="69" label="69px"/>
+				<menuitem value="70" label="70px"/>
+				<menuitem value="71" label="71px"/>
+				<menuitem value="72" label="72px"/>
+				<menuitem value="73" label="73px"/>
+				<menuitem value="74" label="74px"/>
+				<menuitem value="75" label="75px"/>
+				<menuitem value="76" label="76px"/>
+				<menuitem value="77" label="77px"/>
+				<menuitem value="78" label="78px"/>
+				<menuitem value="79" label="79px"/>
+				<menuitem value="80" label="80px"/>
+				<menuitem value="81" label="81px"/>
+				<menuitem value="82" label="82px"/>
+				<menuitem value="83" label="83px"/>
+				<menuitem value="84" label="84px"/>
+				<menuitem value="85" label="85px"/>
+				<menuitem value="86" label="86px"/>
+				<menuitem value="87" label="87px"/>
+				<menuitem value="88" label="88px"/>
+				<menuitem value="89" label="89px"/>
+				<menuitem value="90" label="90px"/>
+				<menuitem value="91" label="91px"/>
+				<menuitem value="92" label="92px"/>
+				<menuitem value="93" label="93px"/>
+				<menuitem value="94" label="94px"/>
+				<menuitem value="95" label="95px"/>
+				<menuitem value="96" label="96px"/>
+				<menuitem value="97" label="97px"/>
+				<menuitem value="98" label="98px"/>
+				<menuitem value="99" label="99px"/>
+				<menuitem value="100" label="100px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tbmainbbwidth" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+				<menuitem value="61" label="61px"/>
+				<menuitem value="62" label="62px"/>
+				<menuitem value="63" label="63px"/>
+				<menuitem value="64" label="64px"/>
+				<menuitem value="65" label="65px"/>
+				<menuitem value="66" label="66px"/>
+				<menuitem value="67" label="67px"/>
+				<menuitem value="68" label="68px"/>
+				<menuitem value="69" label="69px"/>
+				<menuitem value="70" label="70px"/>
+				<menuitem value="71" label="71px"/>
+				<menuitem value="72" label="72px"/>
+				<menuitem value="73" label="73px"/>
+				<menuitem value="74" label="74px"/>
+				<menuitem value="75" label="75px"/>
+				<menuitem value="76" label="76px"/>
+				<menuitem value="77" label="77px"/>
+				<menuitem value="78" label="78px"/>
+				<menuitem value="79" label="79px"/>
+				<menuitem value="80" label="80px"/>
+				<menuitem value="81" label="81px"/>
+				<menuitem value="82" label="82px"/>
+				<menuitem value="83" label="83px"/>
+				<menuitem value="84" label="84px"/>
+				<menuitem value="85" label="85px"/>
+				<menuitem value="86" label="86px"/>
+				<menuitem value="87" label="87px"/>
+				<menuitem value="88" label="88px"/>
+				<menuitem value="89" label="89px"/>
+				<menuitem value="90" label="90px"/>
+				<menuitem value="91" label="91px"/>
+				<menuitem value="92" label="92px"/>
+				<menuitem value="93" label="93px"/>
+				<menuitem value="94" label="94px"/>
+				<menuitem value="95" label="95px"/>
+				<menuitem value="96" label="96px"/>
+				<menuitem value="97" label="97px"/>
+				<menuitem value="98" label="98px"/>
+				<menuitem value="99" label="99px"/>
+				<menuitem value="100" label="100px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Seamonkey settings -->
+	<setting pref="extensions.cstbb-extension.smmainbbwidth" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="27" label="27px"/>
+				<menuitem value="28" label="28px"/>
+				<menuitem value="29" label="29px"/>
+				<menuitem value="30" label="30px"/>
+				<menuitem value="31" label="31px"/>
+				<menuitem value="32" label="32px"/>
+				<menuitem value="33" label="33px"/>
+				<menuitem value="34" label="34px"/>
+				<menuitem value="35" label="35px"/>
+				<menuitem value="36" label="36px"/>
+				<menuitem value="37" label="37px"/>
+				<menuitem value="38" label="38px"/>
+				<menuitem value="39" label="39px"/>
+				<menuitem value="40" label="40px"/>
+				<menuitem value="41" label="41px"/>
+				<menuitem value="42" label="42px"/>
+				<menuitem value="43" label="43px"/>
+				<menuitem value="44" label="44px"/>
+				<menuitem value="45" label="45px"/>
+				<menuitem value="46" label="46px"/>
+				<menuitem value="47" label="47px"/>
+				<menuitem value="48" label="48px"/>
+				<menuitem value="49" label="49px"/>
+				<menuitem value="50" label="50px"/>
+				<menuitem value="51" label="51px"/>
+				<menuitem value="52" label="52px"/>
+				<menuitem value="53" label="53px"/>
+				<menuitem value="54" label="54px"/>
+				<menuitem value="55" label="55px"/>
+				<menuitem value="56" label="56px"/>
+				<menuitem value="57" label="57px"/>
+				<menuitem value="58" label="58px"/>
+				<menuitem value="59" label="59px"/>
+				<menuitem value="60" label="60px"/>
+				<menuitem value="61" label="61px"/>
+				<menuitem value="62" label="62px"/>
+				<menuitem value="63" label="63px"/>
+				<menuitem value="64" label="64px"/>
+				<menuitem value="65" label="65px"/>
+				<menuitem value="66" label="66px"/>
+				<menuitem value="67" label="67px"/>
+				<menuitem value="68" label="68px"/>
+				<menuitem value="69" label="69px"/>
+				<menuitem value="70" label="70px"/>
+				<menuitem value="71" label="71px"/>
+				<menuitem value="72" label="72px"/>
+				<menuitem value="73" label="73px"/>
+				<menuitem value="74" label="74px"/>
+				<menuitem value="75" label="75px"/>
+				<menuitem value="76" label="76px"/>
+				<menuitem value="77" label="77px"/>
+				<menuitem value="78" label="78px"/>
+				<menuitem value="79" label="79px"/>
+				<menuitem value="80" label="80px"/>
+				<menuitem value="81" label="81px"/>
+				<menuitem value="82" label="82px"/>
+				<menuitem value="83" label="83px"/>
+				<menuitem value="84" label="84px"/>
+				<menuitem value="85" label="85px"/>
+				<menuitem value="86" label="86px"/>
+				<menuitem value="87" label="87px"/>
+				<menuitem value="88" label="88px"/>
+				<menuitem value="89" label="89px"/>
+				<menuitem value="90" label="90px"/>
+				<menuitem value="91" label="91px"/>
+				<menuitem value="92" label="92px"/>
+				<menuitem value="93" label="93px"/>
+				<menuitem value="94" label="94px"/>
+				<menuitem value="95" label="95px"/>
+				<menuitem value="96" label="96px"/>
+				<menuitem value="97" label="97px"/>
+				<menuitem value="98" label="98px"/>
+				<menuitem value="99" label="99px"/>
+				<menuitem value="100" label="100px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+
+	
+	<setting type="control" title="&SpaceBB;" class="cstboptions-header"/>
+	<setting pref="extensions.cstbb-extension.menubbspace" 	type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.tabsbbspace" 	type="menulist" title="&Cbsgtabs;" tooltiptext="&Cbsgtabs;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.navbbspace" 	type="menulist" title="&Cbsgnav;" tooltiptext="&Cbsgnav;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookbbspace" 	type="menulist" title="&Cbsgbookm1;" tooltiptext="&Cbsgbookm1;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookbispace" 	type="menulist" title="&Cbsgbookm2;" tooltiptext="&Cbsgbookm2;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.addonbbspace" type="menulist" title="&Cbsgaddon;" tooltiptext="&Cbsgaddon;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Thunderbird settings -->
+	<setting pref="extensions.cstbb-extension.tbmainbbspace" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Seamonkey settings -->
+	<setting pref="extensions.cstbb-extension.smmainbbspace" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+
+	
+	<setting type="control" title="&SpaceBB2;" class="cstboptions-header"/>
+	<setting pref="extensions.cstbb-extension.menubbspace2" type="menulist" title="&Cbsgmenu;" tooltiptext="&Cbsgmenu;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.navbbspace2" type="menulist" title="&Cbsgnav;" tooltiptext="&Cbsgnav;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="99" label="&DefSpaceBB;"/>
+				<menuitem value="101" label="-1px"/>
+				<menuitem value="100" label=" 0px"/>
+				<menuitem value="1"  label=" 1px"/>
+				<menuitem value="2"  label=" 2px"/>
+				<menuitem value="3"  label=" 3px"/>
+				<menuitem value="4"  label=" 4px"/>
+				<menuitem value="5"  label=" 5px"/>
+				<menuitem value="6"  label=" 6px"/>
+				<menuitem value="7"  label=" 7px"/>
+				<menuitem value="8"  label=" 8px"/>
+				<menuitem value="9"  label=" 9px"/>
+				<menuitem value="10" label="10px"/>
+				<menuitem value="11" label="11px"/>
+				<menuitem value="12" label="12px"/>
+				<menuitem value="13" label="13px"/>
+				<menuitem value="14" label="14px"/>
+				<menuitem value="15" label="15px"/>
+				<menuitem value="16" label="16px"/>
+				<menuitem value="17" label="17px"/>
+				<menuitem value="18" label="18px"/>
+				<menuitem value="19" label="19px"/>
+				<menuitem value="20" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.bookbbspace2" type="menulist" title="&BookbbSpace2;" tooltiptext="&BookbbSpace2;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	<setting pref="extensions.cstbb-extension.addonbbspace2" type="menulist" title="&Cbsgaddon;" tooltiptext="&Cbsgaddon;" class="cstbbff cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+	
+	<!-- Thunderbird settings -->
+	<setting pref="extensions.cstbb-extension.tbmainbbspace2" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbtb cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+		
+	<!-- Seamonkey settings -->
+	<setting pref="extensions.cstbb-extension.smmainbbspace2" type="menulist" title="&Cbsgmain;" tooltiptext="&Cbsgmain;" class="cstbbsm cstbbmenulist">
+		<menulist>
+			<menupopup>
+				<menuitem value="0"  label="&DefSpaceBB;"/>
+				<menuitem value="1"  label="-1px"/>
+				<menuitem value="2"  label=" 0px"/>
+				<menuitem value="3"  label=" 1px"/>
+				<menuitem value="4"  label=" 2px"/>
+				<menuitem value="5"  label=" 3px"/>
+				<menuitem value="6"  label=" 4px"/>
+				<menuitem value="7"  label=" 5px"/>
+				<menuitem value="8"  label=" 6px"/>
+				<menuitem value="9"  label=" 7px"/>
+				<menuitem value="10" label=" 8px"/>
+				<menuitem value="11" label=" 9px"/>
+				<menuitem value="12" label="10px"/>
+				<menuitem value="13" label="11px"/>
+				<menuitem value="14" label="12px"/>
+				<menuitem value="15" label="13px"/>
+				<menuitem value="16" label="14px"/>
+				<menuitem value="17" label="15px"/>
+				<menuitem value="18" label="16px"/>
+				<menuitem value="19" label="17px"/>
+				<menuitem value="20" label="18px"/>
+				<menuitem value="21" label="19px"/>
+				<menuitem value="22" label="20px"/>
+			</menupopup>
+		</menulist>
+	</setting>
+</vbox>

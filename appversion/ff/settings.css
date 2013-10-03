@@ -1,0 +1,12 @@
+@-moz-document url("about:addons"){
+
+	.cstbbtb{
+	  visibility: collapse !important;
+	}
+	.cstbbff{
+	  visibility: visible !important;
+	}
+	.cstbbsm{
+	  visibility: collapse !important;
+	}
+}
