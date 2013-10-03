@@ -1,0 +1,6 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+@-moz-document url(chrome://browser/content/browser.xul) {
+    window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icons] > :-moz-any(#nav-bar:not([currentset*="unified-back-forward-button,urlbar-container"]),#nav-bar:not([currentset])) > #unified-back-forward-button > #forward-button > .toolbarbutton-icon {
+	  clip-path: url(chrome://browser/content/browser.xul#windows-keyhole-forward-clip-path) !important;
+	}
+}

@@ -6,12 +6,10 @@ const Cm = Components.manager;
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 
-prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getBranch("extensions.cstbb-extension.");
-prefs2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getDefaultBranch("extensions.cstbb-extension.");
+prefs = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getBranch("extensions.australion-extension.");
+prefs2 = Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getDefaultBranch("extensions.australion-extension.");
 
-const THUNDERBIRD_ID = "{3550f703-e582-4d05-9a08-453d09bdfdc6}";  
 const FIREFOX_ID = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"; 
-const SEAMOKEY_ID = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"; 
 var appInfo = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo); 
 
 function install(params, reason) { }
@@ -28,76 +26,9 @@ function uninstall(params, reason) {
 function startup(params, reason){
 
 	if(appInfo.ID == FIREFOX_ID){
-		this.prefs2.setBoolPref("menubbuttons",false);
-		this.prefs2.setBoolPref("tabsbbuttons",false);
-		this.prefs2.setCharPref("navbarbuttons","nabbuttons_on");
-		this.prefs2.setBoolPref("bookmbuttons1",false);
-		this.prefs2.setBoolPref("bookmbuttons2",false);
-		this.prefs2.setBoolPref("addonbuttons",false);
-		this.prefs2.setBoolPref("aiosbuttons",false);
-		this.prefs2.setBoolPref("placesbuttons",false);
-		this.prefs2.setBoolPref("tabscrollbut",false);
-		this.prefs2.setBoolPref("showforward",false);
-		this.prefs2.setCharPref("navbicons","ico_default");
-		this.prefs2.setCharPref("buttonbf","bf_default");
-		this.prefs2.setIntPref("navdmicons",0);
-		this.prefs2.setIntPref("dlindicator",1);
-		this.prefs2.setBoolPref("bfdropmarker",false);
-		this.prefs2.setCharPref("classicsrg","srg_default");
-		this.prefs2.setBoolPref("verdomainid",false);
-		this.prefs2.setIntPref("menubbradius",100);
-		this.prefs2.setIntPref("tabsbbradius",100);
-		this.prefs2.setIntPref("navbbradius",100);
-		this.prefs2.setIntPref("bookmbbradius1",100);
-		this.prefs2.setIntPref("bookmbbradius2",100);
-		this.prefs2.setIntPref("addonbbradius",100);
-		this.prefs2.setIntPref("urlsearchbbradius",100);
-		this.prefs2.setIntPref("menubbheight",0);
-		this.prefs2.setIntPref("navbbheight",0);
-		this.prefs2.setIntPref("bookbbheight",0);
-		this.prefs2.setIntPref("addonbbheight",0);
-		this.prefs2.setIntPref("menubbwidth",0);
-		this.prefs2.setIntPref("navbbwidth",0);
-		this.prefs2.setIntPref("bookbbwidth",0);
-		this.prefs2.setIntPref("addonbbwidth",0);
-		this.prefs2.setIntPref("menubbspace",0);
-		this.prefs2.setIntPref("tabsbbspace",0);
-		this.prefs2.setIntPref("navbbspace",0);
-		this.prefs2.setIntPref("bookbbspace",0);
-		this.prefs2.setIntPref("bookbispace",0);
-		this.prefs2.setIntPref("addonbbspace",0);
-		this.prefs2.setIntPref("menubbspace2",0);
-		this.prefs2.setIntPref("navbbspace2",0);
-		this.prefs2.setIntPref("bookbbspace2",0);
-		this.prefs2.setIntPref("addonbbspace2",0);
-	}
-	else if(appInfo.ID == THUNDERBIRD_ID){
-		this.prefs2.setBoolPref("tbmenubbuttons",false);
-		this.prefs2.setBoolPref("tbtabsbbuttons",false);
-		this.prefs2.setBoolPref("tbmainbbuttons",true);
-		this.prefs2.setCharPref("tbmailicons","ico_default");
-		this.prefs2.setIntPref("tbmenubbradius",100);
-		this.prefs2.setIntPref("tbtabsbbradius",100);
-		this.prefs2.setIntPref("tbmainbbradius",100);
-		this.prefs2.setIntPref("tbmenubbheight",0);
-		this.prefs2.setIntPref("tbmainbbheight",0);
-		this.prefs2.setIntPref("tbmenubbwidth",0);
-		this.prefs2.setIntPref("tbmainbbwidth",0);
-		this.prefs2.setIntPref("tbmainbbspace",0);
-		this.prefs2.setIntPref("tbmainbbspace2",0);
-	}
-	else if(appInfo.ID == SEAMOKEY_ID){
-		this.prefs2.setBoolPref("smmenubbuttons",false);
-		this.prefs2.setBoolPref("smmainbbuttons",true);
-		this.prefs2.setBoolPref("smbookmbuttons1",false);
-		this.prefs2.setBoolPref("smbookmbuttons2",false);
-		this.prefs2.setCharPref("smnavbicons","ico_default");
-		this.prefs2.setCharPref("smmailicons","ico_default");
-		this.prefs2.setIntPref("smmainbbradius",100);
-		this.prefs2.setIntPref("smmainbbheight",0);
-		this.prefs2.setIntPref("smmainbbwidth",0);
-		this.prefs2.setIntPref("smmainbbspace",0);
-		this.prefs2.setIntPref("smmainbbspace2",0);
+//		this.prefs2.set(BoolORCharORInt)Pref("option",valor);
+		this.prefs2.setBoolPref("australion",false);
+		this.prefs2.setCharPref("","test");
 	}
 
 	PrefsObserver.init();
@@ -108,57 +39,57 @@ function shutdown(params, reason){
 }
 
 var PrefsObserver = {
-	branch: "extensions.cstbb-extension.",
+	branch: "extensions.australion-extension.",
 
 	init: function() {
-		for (let cstbboption in cstbbsettings)
-			this.updateOption(cstbboption);
+		for (let australionoption in australionsettings)
+			this.updateOption(australionoption);
 
 		Services.prefs.addObserver(this.branch, this, true);
 	},
 
 	shutdown: function() {
-		for (let cstbboption in cstbbsettings)
-			cstbbsettings[cstbboption].shutdown();
+		for (let australionoption in australionsettings)
+			australionsettings[australionoption].shutdown();
 
 		Services.prefs.removeObserver(this.branch, this);
 	},
 
-	updateOption: function(cstbboption) {
-		if (!(cstbboption in cstbbsettings))
+	updateOption: function(australionoption) {
+		if (!(australionoption in australionsettings))
 			return;
 
 		try	{
 			let enabled;
-			if (cstbboption == "overlay" || cstbboption == "navbarbuttons" || cstbboption == "navbicons" || cstbboption == "tbmailicons" ||  cstbboption == "smnavbicons" || cstbboption == "smmailicons" || cstbboption == "buttonbf" || cstbboption == "classicsrg")
+			if (australionoption == "overlay" || australionoption == "navbarbuttons" || australionoption == "navbicons" || australionoption == "tbmailicons" ||  australionoption == "smnavbicons" || australionoption == "smmailicons" || australionoption == "buttonbf" || australionoption == "classicsrg")
 				enabled = true;
-			else if (Services.prefs.getPrefType(this.branch + cstbboption) == Ci.nsIPrefBranch.PREF_INT)
-				enabled = Services.prefs.getIntPref(this.branch + cstbboption) > -1;
+			else if (Services.prefs.getPrefType(this.branch + australionoption) == Ci.nsIPrefBranch.PREF_INT)
+				enabled = Services.prefs.getIntPref(this.branch + australionoption) > -1;
 			else
-				enabled = Services.prefs.getBoolPref(this.branch + cstbboption);
+				enabled = Services.prefs.getBoolPref(this.branch + australionoption);
 			if (enabled)
-				cstbbsettings[cstbboption].init();
+				australionsettings[australionoption].init();
 			else
-				cstbbsettings[cstbboption].shutdown();
+				australionsettings[australionoption].shutdown();
 
 			// Make sure some style sheets always get (re)enabled _after_ 'navbarbuttons' style sheet, if their options are active (->prevents glitches).
-			if (cstbboption == "navbarbuttons" && (Services.prefs.getCharPref(this.branch + "buttonbf") != 'bf_default')==true){
-				cstbbsettings["buttonbf"].shutdown();
-				cstbbsettings["buttonbf"].init();
+			if (australionoption == "navbarbuttons" && (Services.prefs.getCharPref(this.branch + "buttonbf") != 'bf_default')==true){
+				australionsettings["buttonbf"].shutdown();
+				australionsettings["buttonbf"].init();
 			}
-			if (cstbboption == "navbarbuttons" && (Services.prefs.getIntPref(this.branch + "navbbheight") != 0)==true){
-				cstbbsettings["navbbheight"].shutdown();
-				cstbbsettings["navbbheight"].init();
+			if (australionoption == "navbarbuttons" && (Services.prefs.getIntPref(this.branch + "navbbheight") != 0)==true){
+				australionsettings["navbbheight"].shutdown();
+				australionsettings["navbbheight"].init();
 			}
-			if (cstbboption == "navbarbuttons" && (Services.prefs.getIntPref(this.branch + "navbbwidth") != 0)==true){
-				cstbbsettings["navbbwidth"].shutdown();
-				cstbbsettings["navbbwidth"].init();
+			if (australionoption == "navbarbuttons" && (Services.prefs.getIntPref(this.branch + "navbbwidth") != 0)==true){
+				australionsettings["navbbwidth"].shutdown();
+				australionsettings["navbbwidth"].init();
 			}
 
 			// Make sure 'navbbheight' style sheet is always (re)enabled _after_ 'buttonbf' style sheet, if both are used (->prevents glitches).
-			if (cstbboption == "buttonbf" && enabled==true && (Services.prefs.getIntPref(this.branch + "navbbheight") > 0)==true){
-				cstbbsettings["navbbheight"].shutdown();
-				cstbbsettings["navbbheight"].init();
+			if (australionoption == "buttonbf" && enabled==true && (Services.prefs.getIntPref(this.branch + "navbbheight") > 0)==true){
+				australionsettings["navbbheight"].shutdown();
+				australionsettings["navbbheight"].init();
 			}
 
 		}
@@ -198,22 +129,22 @@ var StylesheetManager = {
 };
 
 // add-ons settings area overlay
-var CSTBBOverlay = {
+var australionOverlay = {
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/overlay.css"
+	stylesheet: "chrome://australion-extension/content/css/overlay.css"
 };
 
 // Firefox main settings
 var MenuBarButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/menubarbuttons.css"
+	stylesheet: "chrome://australion-extension/content/css/menubarbuttons.css"
 };
 
 var TabsBarButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/tabsbarbuttons.css"
+	stylesheet: "chrome://australion-extension/content/css/tabsbarbuttons.css"
 };
 
 var NavBarButtons = {
@@ -227,12 +158,12 @@ var NavBarButtons = {
 			var osString = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULRuntime).OS;
 
 			if (osString=="WINNT") {
-				return "chrome://cstbb-extension/content/css/navbarbuttons.css";
+				return "chrome://australion-extension/content/css/navbarbuttons.css";
 			}
-			else return "chrome://cstbb-extension/content/css/navbarbuttons_nw.css";	
+			else return "chrome://australion-extension/content/css/navbarbuttons_nw.css";	
 		}
 
-		if (radiovalue=="nabbuttons_on_small_ux")	return "chrome://cstbb-extension/content/css/navbarbuttons_small_ux.css";
+		if (radiovalue=="nabbuttons_on_small_ux")	return "chrome://australion-extension/content/css/navbarbuttons_small_ux.css";
 
 	}
 };
@@ -240,97 +171,50 @@ var NavBarButtons = {
 var BookmarksBarButtons1 = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/bookmarksbarbuttons1.css"
+	stylesheet: "chrome://australion-extension/content/css/bookmarksbarbuttons1.css"
 };
 
 var BookmarksBarButtons2 = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/bookmarksbarbuttons2.css"
+	stylesheet: "chrome://australion-extension/content/css/bookmarksbarbuttons2.css"
 };
 
 var AddonBarButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/addonbarbuttons.css"
+	stylesheet: "chrome://australion-extension/content/css/addonbarbuttons.css"
 };
 
 var AiosButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/aiosbuttons.css"
+	stylesheet: "chrome://australion-extension/content/css/aiosbuttons.css"
 };
 
 var PlacesButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/placesbuttons.css"
+	stylesheet: "chrome://australion-extension/content/css/placesbuttons.css"
 };
 
 //Thunderbird main settings
 var TBMenuBarButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/tb_menubar.css"
+	stylesheet: "chrome://australion-extension/content/css/tb_menubar.css"
 };
 
 var TBTabsBarButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/tb_tabstoolbar.css"
+	stylesheet: "chrome://australion-extension/content/css/tb_tabstoolbar.css"
 };
 
 var TBMainBarButtons = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/tb_maintoolbar.css"
-};
-
-// Seamokey main settings
-var SMMenuBarButtons = {
-
-	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/sm_menutoolbars.css"
-};
-
-var SMMainBarButtons = {
-
-	__proto__: StylesheetManager,
-		get stylesheet() {
-		
-			var osString = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULRuntime).OS;
-
-			if (Cc["@mozilla.org/preferences-service;1"].getService(Ci.nsIPrefService).getBranch("general.skins.").getCharPref("selectedSkin") == "classic/1.0") {
-				return "chrome://cstbb-extension/content/css/sm_maintoolbars.css";
-			}
-			else return "chrome://cstbb-extension/content/css/sm_maintoolbars2.css";	
-
-	}
-};
-
-var SMBookmarksBarButtons1 = {
-
-	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/sm_bookmarkstoolbar.css"
-};
-
-var SMBookmarksBarButtons2 = {
-
-	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/sm_bookmarks.css"
-};
-
-// other main settings
-var TabScrollButtons = {
-
-	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/tabscrollbuttons.css"
-};
-
-var BackForwardDropmarker = {
-
-	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/bfdropmarker.css"
+	stylesheet: "chrome://australion-extension/content/css/tb_maintoolbar.css"
 };
 
 // icon settings
@@ -342,77 +226,22 @@ var NavBarIcons = {
 	get stylesheet() {
 		let radiovalue = Services.prefs.getCharPref(PrefsObserver.branch + "navbicons");
 		
-		if (radiovalue=="ico_ff12d")	return "chrome://cstbb-extension/content/css/icons_ff12_dark.css";
-		if (radiovalue=="ico_ff12w")	return "chrome://cstbb-extension/content/css/icons_ff12_light.css";
-		if (radiovalue=="ico_ff13d")	return "chrome://cstbb-extension/content/css/icons_ff13_dark.css";
-		if (radiovalue=="ico_ff13w")	return "chrome://cstbb-extension/content/css/icons_ff13_light.css";
-		if (radiovalue=="ico_ff1") 		return "chrome://cstbb-extension/content/css/icons_ff1.css";
-		if (radiovalue=="ico_ff2")		return "chrome://cstbb-extension/content/css/icons_ff2.css";
-		if (radiovalue=="ico_ff3v1")	return "chrome://cstbb-extension/content/css/icons_ff3v1.css";
-		if (radiovalue=="ico_ff3v2")	return "chrome://cstbb-extension/content/css/icons_ff3v2.css";
-		if (radiovalue=="ico_tango")	return "chrome://cstbb-extension/content/css/icons_tango.css";
-		if (radiovalue=="ico_ffmac")	return "chrome://cstbb-extension/content/css/icons_mac.css";
-		if (radiovalue=="ico_sm")		return "chrome://cstbb-extension/content/css/icons_sm.css";
-		if (radiovalue=="ico_mix")		return "chrome://cstbb-extension/content/css/icons_ffmix.css";
-		if (radiovalue=="ico_noia")		return "chrome://cstbb-extension/content/css/icons_noia.css";
+		if (radiovalue=="ico_ff12d")	return "chrome://australion-extension/content/css/icons_ff12_dark.css";
+		if (radiovalue=="ico_ff12w")	return "chrome://australion-extension/content/css/icons_ff12_light.css";
+		if (radiovalue=="ico_ff13d")	return "chrome://australion-extension/content/css/icons_ff13_dark.css";
+		if (radiovalue=="ico_ff13w")	return "chrome://australion-extension/content/css/icons_ff13_light.css";
+		if (radiovalue=="ico_ff1") 		return "chrome://australion-extension/content/css/icons_ff1.css";
+		if (radiovalue=="ico_ff2")		return "chrome://australion-extension/content/css/icons_ff2.css";
+		if (radiovalue=="ico_ff3v1")	return "chrome://australion-extension/content/css/icons_ff3v1.css";
+		if (radiovalue=="ico_ff3v2")	return "chrome://australion-extension/content/css/icons_ff3v2.css";
+		if (radiovalue=="ico_tango")	return "chrome://australion-extension/content/css/icons_tango.css";
+		if (radiovalue=="ico_ffmac")	return "chrome://australion-extension/content/css/icons_mac.css";
+		if (radiovalue=="ico_sm")		return "chrome://australion-extension/content/css/icons_sm.css";
+		if (radiovalue=="ico_mix")		return "chrome://australion-extension/content/css/icons_ffmix.css";
+		if (radiovalue=="ico_noia")		return "chrome://australion-extension/content/css/icons_noia.css";
 	}
 };
 
-//Tb
-var ThunderbirdMainIcons = {
-
-	__proto__: StylesheetManager,
-	get stylesheet() {
-		let radiovalue = Services.prefs.getCharPref(PrefsObserver.branch + "tbmailicons");
-		
-		if (radiovalue=="ico_tb17d")	return "chrome://cstbb-extension/content/css/tb_icons_dark.css";
-		if (radiovalue=="ico_tb17w")	return "chrome://cstbb-extension/content/css/tb_icons_white.css";
-		if (radiovalue=="ico_tb1")		return "chrome://cstbb-extension/content/css/tb_icons_tb1.css";
-		if (radiovalue=="ico_tb2")		return "chrome://cstbb-extension/content/css/tb_icons_tb2.css";
-		if (radiovalue=="ico_tb3v1")	return "chrome://cstbb-extension/content/css/tb_icons_tb3.css";
-		if (radiovalue=="ico_tb3v2")	return "chrome://cstbb-extension/content/css/tb_icons_tb3_strata.css";
-		if (radiovalue=="ico_tbmac")	return "chrome://cstbb-extension/content/css/tb_icons_tb_mac.css";
-	}
-};
-
-//Sm
-var SeamonkeyNavBarIcons = {
-
-	__proto__: StylesheetManager,
-	get stylesheet() {
-		let radiovalue = Services.prefs.getCharPref(PrefsObserver.branch + "smnavbicons");
-		
-		if (radiovalue=="ico_ff12d")	return "chrome://cstbb-extension/content/css/sm_icons_ff12_dark.css";
-		if (radiovalue=="ico_ff12w")	return "chrome://cstbb-extension/content/css/sm_icons_ff12_light.css";
-		if (radiovalue=="ico_ff13d")	return "chrome://cstbb-extension/content/css/sm_icons_ff13_dark.css";
-		if (radiovalue=="ico_ff13w")	return "chrome://cstbb-extension/content/css/sm_icons_ff13_light.css";
-		if (radiovalue=="ico_ff1") 		return "chrome://cstbb-extension/content/css/sm_icons_ff1.css";
-		if (radiovalue=="ico_ff2")		return "chrome://cstbb-extension/content/css/sm_icons_ff2.css";
-		if (radiovalue=="ico_ff3v1")	return "chrome://cstbb-extension/content/css/sm_icons_ff3v1.css";
-		if (radiovalue=="ico_ff3v2")	return "chrome://cstbb-extension/content/css/sm_icons_ff3v2.css";
-		if (radiovalue=="ico_tango")	return "chrome://cstbb-extension/content/css/sm_icons_tango.css";
-		if (radiovalue=="ico_ffmac")	return "chrome://cstbb-extension/content/css/sm_icons_mac.css";
-		if (radiovalue=="ico_sm")		return "chrome://cstbb-extension/content/css/sm_icons_sm.css";
-		if (radiovalue=="ico_mix")		return "chrome://cstbb-extension/content/css/sm_icons_ffmix.css";
-		if (radiovalue=="ico_noia")		return "chrome://cstbb-extension/content/css/sm_icons_noia.css";
-	}
-};
-
-var SeamonkeyMailIcons = {
-
-	__proto__: StylesheetManager,
-	get stylesheet() {
-		let radiovalue = Services.prefs.getCharPref(PrefsObserver.branch + "smmailicons");
-		
-		if (radiovalue=="ico_tb17d")	return "chrome://cstbb-extension/content/css/sm_icons_tb_dark.css";
-		if (radiovalue=="ico_tb17w")	return "chrome://cstbb-extension/content/css/sm_icons_tb_white.css";
-		if (radiovalue=="ico_tb1")		return "chrome://cstbb-extension/content/css/sm_icons_tb1.css";
-		if (radiovalue=="ico_tb2")		return "chrome://cstbb-extension/content/css/sm_icons_tb2.css";
-		if (radiovalue=="ico_tb3v1")	return "chrome://cstbb-extension/content/css/sm_icons_tb3.css";
-		if (radiovalue=="ico_tb3v2")	return "chrome://cstbb-extension/content/css/sm_icons_tb3_strata.css";
-		if (radiovalue=="ico_tbmac")	return "chrome://cstbb-extension/content/css/sm_icons_tb_mac.css";
-	}
-};
 
 //Fx
 var BackForwardButton = {
@@ -422,32 +251,32 @@ var BackForwardButton = {
 		try{
 			let radiovalue = Services.prefs.getCharPref(PrefsObserver.branch + "buttonbf");
 			if (radiovalue=="bf_green"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ff3_greensmall.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ff3_green.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ff3_greensmall.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ff3_green.css";
 			}
 			if (radiovalue=="bf_blue"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ff3_bluesmall.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ff3_blue.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ff3_bluesmall.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ff3_blue.css";
 			}
 			if (radiovalue=="bf_blue2"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ff3_blue_v2small.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ff3_blue_v2.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ff3_blue_v2small.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ff3_blue_v2.css";
 			}
 			if (radiovalue=="bf_red"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ff3_redsmall.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ff3_red.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ff3_redsmall.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ff3_red.css";
 			}
 			if (radiovalue=="bf_orange"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ff3_orangesmall.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ff3_orange.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ff3_orangesmall.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ff3_orange.css";
 			}
 			if (radiovalue=="bf_ie8"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ie8small.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ie8.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ie8small.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ie8.css";
 			}
 			if (radiovalue=="bf_ie9"){
-				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://cstbb-extension/content/css/icons_bf_ie9small.css";
-				else return "chrome://cstbb-extension/content/css/icons_bf_ie9.css";
+				if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") return "chrome://australion-extension/content/css/icons_bf_ie9small.css";
+				else return "chrome://australion-extension/content/css/icons_bf_ie9.css";
 			}
 		}catch(e) {Cu.reportError(e)}
 	}
@@ -460,10 +289,10 @@ var NavDmIcons = {
 	get stylesheet(){
 		try{
 			let radiovalue = Services.prefs.getIntPref(PrefsObserver.branch + "navdmicons");
-			if (radiovalue==1) return "chrome://cstbb-extension/content/css/icons_dm_small_dark.css";
-			if (radiovalue==2) return "chrome://cstbb-extension/content/css/icons_dm_big_dark.css";
-			if (radiovalue==3) return "chrome://cstbb-extension/content/css/icons_dm_small_light.css";
-			if (radiovalue==4) return "chrome://cstbb-extension/content/css/icons_dm_big_light.css";
+			if (radiovalue==1) return "chrome://australion-extension/content/css/icons_dm_small_dark.css";
+			if (radiovalue==2) return "chrome://australion-extension/content/css/icons_dm_big_dark.css";
+			if (radiovalue==3) return "chrome://australion-extension/content/css/icons_dm_small_light.css";
+			if (radiovalue==4) return "chrome://australion-extension/content/css/icons_dm_big_light.css";
 		}catch(e) {Cu.reportError(e)}
 	}
 	
@@ -475,8 +304,8 @@ var DlIndicator = {
 	get stylesheet(){
 		try{
 			let radiovalue = Services.prefs.getIntPref(PrefsObserver.branch + "dlindicator");
-			if (radiovalue==1) return "chrome://cstbb-extension/content/css/dl_indicator_modern_icon1.css";
-			if (radiovalue==2) return "chrome://cstbb-extension/content/css/dl_indicator_modern_icon2.css";
+			if (radiovalue==1) return "chrome://australion-extension/content/css/dl_indicator_modern_icon1.css";
+			if (radiovalue==2) return "chrome://australion-extension/content/css/dl_indicator_modern_icon2.css";
 		}catch(e) {Cu.reportError(e)}
 	}
 	
@@ -489,8 +318,8 @@ var ClassicSRGButton = {
 	get stylesheet() {
 		let radiovalue = Services.prefs.getCharPref(PrefsObserver.branch + "classicsrg");
 		
-		if (radiovalue=="srg_classic")	return "chrome://cstbb-extension/content/css/srg-classic.css";
-		if (radiovalue=="srg_austr")	return "chrome://cstbb-extension/content/css/srg-austr.css";
+		if (radiovalue=="srg_classic")	return "chrome://australion-extension/content/css/srg-classic.css";
+		if (radiovalue=="srg_austr")	return "chrome://australion-extension/content/css/srg-austr.css";
 	}
 
 };
@@ -498,13 +327,13 @@ var ClassicSRGButton = {
 var VerifiedDomainsIdentities = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/verifieddomid.css"
+	stylesheet: "chrome://australion-extension/content/css/verifieddomid.css"
 };
 
 var ShowForwardButton = {
 
 	__proto__: StylesheetManager,
-	stylesheet: "chrome://cstbb-extension/content/css/showforward.css"
+	stylesheet: "chrome://australion-extension/content/css/showforward.css"
 };
 
 // radius settings
@@ -748,115 +577,6 @@ var UrlSearchBarBorderRadius = {
 		}
 };
 
-// Thunderbird radius settings
-
-var TBMenuBarButtonRadius = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbmenubbradius")!=100){
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul) {\
-							.chromeclass-menubar toolbarbutton[type="menu"],\
-							.chromeclass-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							.chromeclass-menubar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,\
-							.chromeclass-menubar .toolbarbutton-1{\
-								border-radius: '+prefs.getIntPref("tbmenubbradius")/2+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-var TBTabsBarButtonRadius = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbtabsbbradius")!=100){
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul){\
-							#tabs-toolbar #alltabs-button,\
-							#tabbar-toolbar toolbarbutton[type="menu"],\
-							#tabbar-toolbar toolbarbutton,\
-							#tabbar-toolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							#tabbar-toolbar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,\
-							#tabbar-toolbar .toolbarbutton-1{\
-								border-radius: '+prefs.getIntPref("tbtabsbbradius")/2+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-var TBMainBarButtonRadius = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbmainbbradius")!=100){
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1{\
-								border-radius: '+prefs.getIntPref("tbmainbbradius")/2+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};	
-
-// Seamonkey radius settings
-
-var SMMainBarButtonRadius = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("smmainbbradius")!=100){
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document  url(chrome://navigator/content/navigator.xul),\
-										url(chrome://editor/content/editor.xul),\
-										url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1{\
-								border-radius: '+prefs.getIntPref("smmainbbradius")/2+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};	
-
 
 // height settings
 var MenubarButtonHeight = {
@@ -919,7 +639,7 @@ var NavbarButtonHeight = {
 				  
 				  s4=3; s5=5;
 				  
-				  if((Services.prefs.getCharPref("extensions.cstbb-extension.buttonbf") != "bf_default")==false){
+				  if((Services.prefs.getCharPref("extensions.australion-extension.buttonbf") != "bf_default")==false){
 				    
 					if (Services.prefs.getCharPref(PrefsObserver.branch + "navbarbuttons")=="nabbuttons_on_small_ux") { s3=0; s4=0; s5=0; }
 					
@@ -1020,88 +740,6 @@ var AddonbarButtonHeight = {
 		}
 };
 
-// Thunderbird height settings
-
-var TBMenubarButtonHeight = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbmenubbheight")!=0){
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul) {\
-							.chromeclass-menubar .toolbarbutton-1:not(.toolbarbutton-menubutton-button){\
-								min-height: '+prefs.getIntPref("tbmenubbheight")+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-var TBMainbarButtonHeight = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbmainbbheight")!=0){
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1{\
-								min-height: '+prefs.getIntPref("tbmainbbheight")+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-// Seamonkey height settings
-
-var SMMainbarButtonHeight = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("smmainbbheight")!=0){
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document  url(chrome://navigator/content/navigator.xul),\
-										url(chrome://editor/content/editor.xul),\
-										url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1{\
-								min-height: '+prefs.getIntPref("smmainbbheight")+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
 
 // width settings
 var MenubarButtonWidth = {
@@ -1207,87 +845,6 @@ var AddonbarButtonWidth = {
 							#addon-bar toolbarbutton:not(#back-forward-dropmarker):not(.toolbarbutton-menubutton-button),\
 							#addon-bar .toolbarbutton-menubutton-button{\
 								min-width: '+prefs.getIntPref("addonbbwidth")+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-// Thunderbird width settings
-
-var TBMenubarButtonWidth = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbmenubbwidth")!=0){
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul) {\
-							.chromeclass-menubar .toolbarbutton-1:not(.toolbarbutton-menubutton-button){\
-								min-width: '+prefs.getIntPref("tbmenubbwidth")+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-var TBMainbarButtonWidth = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("tbmainbbwidth")!=0){
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1{\
-								min-width: '+prefs.getIntPref("tbmainbbwidth")+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-// Seamonkey width settings
-
-var SMMainbarButtonWidth = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				if(prefs.getIntPref("smmainbbwidth")!=0){
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document  url(chrome://navigator/content/navigator.xul),\
-										url(chrome://editor/content/editor.xul),\
-										url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1{\
-								min-width: '+prefs.getIntPref("smmainbbwidth")+'px !important;\
 							}\
 						}\
 					');
@@ -1661,117 +1218,6 @@ var AddonbarButtonsSpace = {
 		}
 };
 
-// Thunderbird space settings (left/right)
-
-var TBMainbarButtonsSpace = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				var value=prefs.getIntPref("tbmainbbspace");
-				if(value!=0){
-					let tbmainbb_space = 2;	//initialize value (not used anyway)
-
-					switch (value) {
-						case 1: tbmainbb_space=-1/2; break;
-						case 2: tbmainbb_space=0; break;
-						case 3: tbmainbb_space=1/2; break;
-						case 4: tbmainbb_space=2/2; break;
-						case 5: tbmainbb_space=3/2; break;
-						case 6: tbmainbb_space=4/2; break;
-						case 7: tbmainbb_space=5/2; break;
-						case 8: tbmainbb_space=6/2; break;
-						case 9: tbmainbb_space=7/2; break;
-						case 10: tbmainbb_space=8/2; break;
-						case 11: tbmainbb_space=9/2; break;
-						case 12: tbmainbb_space=10/2; break;
-						case 13: tbmainbb_space=11/2; break;
-						case 14: tbmainbb_space=12/2; break;
-						case 15: tbmainbb_space=13/2; break;
-						case 16: tbmainbb_space=14/2; break;
-						case 17: tbmainbb_space=15/2; break;
-						case 18: tbmainbb_space=16/2; break;
-						case 19: tbmainbb_space=17/2; break;
-						case 20: tbmainbb_space=18/2; break;
-						case 21: tbmainbb_space=19/2; break;
-						case 22: tbmainbb_space=20/2; break;
-					}
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1:not(.toolbarbutton-menubutton-button) {\
-								margin-left: '+tbmainbb_space+'px !important;\
-								margin-right: '+tbmainbb_space+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-// Seamonkey space settings (left/right)
-
-var SMMainbarButtonsSpace = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				var value=prefs.getIntPref("smmainbbspace");
-				if(value!=0){
-					let smmainbb_space = 2;	//initialize value (not used anyway)
-
-					switch (value) {
-						case 1: smmainbb_space=-1/2; break;
-						case 2: smmainbb_space=0; break;
-						case 3: smmainbb_space=1/2; break;
-						case 4: smmainbb_space=2/2; break;
-						case 5: smmainbb_space=3/2; break;
-						case 6: smmainbb_space=4/2; break;
-						case 7: smmainbb_space=5/2; break;
-						case 8: smmainbb_space=6/2; break;
-						case 9: smmainbb_space=7/2; break;
-						case 10: smmainbb_space=8/2; break;
-						case 11: smmainbb_space=9/2; break;
-						case 12: smmainbb_space=10/2; break;
-						case 13: smmainbb_space=11/2; break;
-						case 14: smmainbb_space=12/2; break;
-						case 15: smmainbb_space=13/2; break;
-						case 16: smmainbb_space=14/2; break;
-						case 17: smmainbb_space=15/2; break;
-						case 18: smmainbb_space=16/2; break;
-						case 19: smmainbb_space=17/2; break;
-						case 20: smmainbb_space=18/2; break;
-						case 21: smmainbb_space=19/2; break;
-						case 22: smmainbb_space=20/2; break;
-					}
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document  url(chrome://navigator/content/navigator.xul),\
-										url(chrome://editor/content/editor.xul),\
-										url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1:not(.toolbarbutton-menubutton-button) {\
-								margin-left: '+smmainbb_space+'px !important;\
-								margin-right: '+smmainbb_space+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
 
 // space settings (top/bottom)
 
@@ -1984,185 +1430,3 @@ var AddonbarButtonsSpace2 = {
 		}
 };
 
-// Thunderbird space settings (top/bottom)
-
-var TBMainbarButtonsSpace2 = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				var value=prefs.getIntPref("tbmainbbspace2");
-				if(value!=0){
-					let tbmainbb_space2 = 2;	//initialize value (not used anyway)
-
-					switch (value) {
-						case 1: tbmainbb_space2=-1; break;
-						case 2: tbmainbb_space2=0; break;
-						case 3: tbmainbb_space2=1; break;
-						case 4: tbmainbb_space2=2; break;
-						case 5: tbmainbb_space2=3; break;
-						case 6: tbmainbb_space2=4; break;
-						case 7: tbmainbb_space2=5; break;
-						case 8: tbmainbb_space2=6; break;
-						case 9: tbmainbb_space2=7; break;
-						case 10: tbmainbb_space2=8; break;
-						case 11: tbmainbb_space2=9; break;
-						case 12: tbmainbb_space2=10; break;
-						case 13: tbmainbb_space2=11; break;
-						case 14: tbmainbb_space2=12; break;
-						case 15: tbmainbb_space2=13; break;
-						case 16: tbmainbb_space2=14; break;
-						case 17: tbmainbb_space2=15; break;
-						case 18: tbmainbb_space2=16; break;
-						case 19: tbmainbb_space2=17; break;
-						case 20: tbmainbb_space2=18; break;
-						case 21: tbmainbb_space2=19; break;
-						case 22: tbmainbb_space2=20; break;
-					}
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document	url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-							:-moz-any(.chromeclass-toolbar) .toolbarbutton-1:not(.toolbarbutton-menubutton-button) {\
-								margin-top: '+tbmainbb_space2+'px !important;\
-								margin-bottom: '+tbmainbb_space2+'px !important;\
-							}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-// Seamonkey space settings (top/bottom)
-
-var SMMainbarButtonsSpace2 = {
-
-	__proto__: StylesheetManager,
-		get stylesheet(){
-			try{
-				var value=prefs.getIntPref("smmainbbspace2");
-				if(value!=0){
-					let smmainbb_space2 = 2;	//initialize value (not used anyway)
-
-					switch (value) {
-						case 1: smmainbb_space2=-1; break;
-						case 2: smmainbb_space2=0; break;
-						case 3: smmainbb_space2=1; break;
-						case 4: smmainbb_space2=2; break;
-						case 5: smmainbb_space2=3; break;
-						case 6: smmainbb_space2=4; break;
-						case 7: smmainbb_space2=5; break;
-						case 8: smmainbb_space2=6; break;
-						case 9: smmainbb_space2=7; break;
-						case 10: smmainbb_space2=8; break;
-						case 11: smmainbb_space2=9; break;
-						case 12: smmainbb_space2=10; break;
-						case 13: smmainbb_space2=11; break;
-						case 14: smmainbb_space2=12; break;
-						case 15: smmainbb_space2=13; break;
-						case 16: smmainbb_space2=14; break;
-						case 17: smmainbb_space2=15; break;
-						case 18: smmainbb_space2=16; break;
-						case 19: smmainbb_space2=17; break;
-						case 20: smmainbb_space2=18; break;
-						case 21: smmainbb_space2=19; break;
-						case 22: smmainbb_space2=20; break;
-					}
-					
-					return "data:text/css;charset=utf-8," + encodeURIComponent('\
-						@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);\
-						@-moz-document  url(chrome://navigator/content/navigator.xul),\
-										url(chrome://editor/content/editor.xul),\
-										url(chrome://messenger/content/messenger.xul),\
-										url(chrome://messenger/content/messageWindow.xul),\
-										url(chrome://messenger/content/messengercompose/messengercompose.xul),\
-										url(chrome://messenger/content/addressbook/addressbook.xul),\
-										url(chrome://calendar/content/calendar-event-dialog.xul){\
-								:-moz-any(.chromeclass-toolbar) .toolbarbutton-1:not(.toolbarbutton-menubutton-button) {\
-									margin-top: '+smmainbb_space2+'px !important;\
-									margin-bottom: '+smmainbb_space2+'px !important;\
-								}\
-						}\
-					');
-				}
-				
-			}catch(e) {Cu.reportError(e)}
-		}
-};
-
-var cstbbsettings = {
-
-	"overlay": CSTBBOverlay,
-	"menubbuttons": MenuBarButtons,
-	"tabsbbuttons": TabsBarButtons,
-	"navbarbuttons": NavBarButtons,
-	"bookmbuttons1": BookmarksBarButtons1,
-	"bookmbuttons2": BookmarksBarButtons2,
-	"addonbuttons": AddonBarButtons,
-	"aiosbuttons": AiosButtons,
-	"placesbuttons": PlacesButtons,
-	"tabscrollbut": TabScrollButtons,
-	"showforward": ShowForwardButton,
-	"tbmenubbuttons": TBMenuBarButtons,
-	"tbtabsbbuttons": TBTabsBarButtons,
-	"tbmainbbuttons": TBMainBarButtons,
-	"smmenubbuttons": SMMenuBarButtons,
-	"smmainbbuttons": SMMainBarButtons,
-	"smbookmbuttons1": SMBookmarksBarButtons1,
-	"smbookmbuttons2": SMBookmarksBarButtons2,
-	"navbicons": NavBarIcons,
-	"tbmailicons": ThunderbirdMainIcons,
-	"smnavbicons": SeamonkeyNavBarIcons,
-	"smmailicons": SeamonkeyMailIcons,
-	"buttonbf": BackForwardButton,
-	"navdmicons": NavDmIcons,
-	"dlindicator": DlIndicator,
-	"classicsrg": ClassicSRGButton,
-	"verdomainid": VerifiedDomainsIdentities,
-	"bfdropmarker": BackForwardDropmarker,
-	"menubbradius": MenuBarButtonRadius,
-	"tabsbbradius": TabsBarButtonRadius,
-	"navbbradius": NavBarButtonRadius,
-	"tbmenubbradius": TBMenuBarButtonRadius,
-	"tbtabsbbradius": TBTabsBarButtonRadius,
-	"tbmainbbradius": TBMainBarButtonRadius,
-	"smmainbbradius": SMMainBarButtonRadius,
-	"bookmbbradius1":BookmarksBarButtonsRadius1,
-	"bookmbbradius2":BookmarksBarButtonsRadius2,
-	"addonbbradius": AddonbarButtonRadius,
-	"urlsearchbbradius": UrlSearchBarBorderRadius,
-	"menubbheight": MenubarButtonHeight,
-	"navbbheight": NavbarButtonHeight,
-	"bookbbheight": BookmarksbarButtonHeight,
-	"addonbbheight": AddonbarButtonHeight,
-	"tbmenubbheight": TBMenubarButtonHeight,
-	"tbmainbbheight": TBMainbarButtonHeight,
-	"smmainbbheight": SMMainbarButtonHeight,
-	"menubbwidth": MenubarButtonWidth,
-	"navbbwidth": NavbarButtonWidth,
-	"bookbbwidth": BookmarksbarButtonWidth,
-	"addonbbwidth": AddonbarButtonWidth,
-	"tbmenubbwidth": TBMenubarButtonWidth,
-	"tbmainbbwidth": TBMainbarButtonWidth,
-	"smmainbbwidth": SMMainbarButtonWidth,
-	"menubbspace": MenubarButtonsSpace,
-	"tabsbbspace": TabsbarButtonsSpace,
-	"navbbspace": NavbarButtonsSpace,
-	"bookbbspace": BookmarksbarButtonsSpace,
-	"bookbispace": BookmarksbarItemsSpace,
-	"addonbbspace": AddonbarButtonsSpace,
-	"tbmainbbspace": TBMainbarButtonsSpace,
-	"smmainbbspace": SMMainbarButtonsSpace,
-	"menubbspace2": MenubarButtonsSpace2,
-	"navbbspace2": NavbarButtonsSpace2,
-	"bookbbspace2": BookmarksbarButtonsSpace2,
-	"addonbbspace2": AddonbarButtonsSpace2,
-	"tbmainbbspace2": TBMainbarButtonsSpace2,
-	"smmainbbspace2": SMMainbarButtonsSpace2
-};
